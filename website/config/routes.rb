@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   
-  devise_for :doctors
+  devise_for :doctors, :controllers => { registrations: 'registrations' }
   
-  root 'home#index'
+  # get 'home#index'
+  devise_scope :doctor do
+   root to: "devise/registrations#new"
+  end
 
+  resources :home
   resources :data
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

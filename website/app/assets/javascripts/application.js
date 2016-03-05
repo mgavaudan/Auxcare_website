@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
+
+$( document ).ready(function() {
+
+	$( ".signup_box" ).hide();
+	$( ".signin_box" ).hide();
+
+	$( "#signup" ).click(function() {
+	   $(".signup_box").slideToggle("slow");
+	});
+
+	$( "#signin" ).click(function() {
+	   $(".signin_box").slideToggle("slow");
+	});
+
+});
