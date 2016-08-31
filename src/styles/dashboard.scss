@@ -1,0 +1,40 @@
+/* Variables */
+$charcoal: #364958;
+$blue: #5FB3DD;
+$dark-blue: #427E9C;
+$light-blue: #8CCAE8;
+
+.logo {
+	font-size: 3em;
+	height: 5em;
+	color: white;
+	background: $light-blue;
+}
+
+/* Styles */
+.menu {
+	width: 20%;
+	position: absolute;
+	left: 0;
+	top: 5em;
+	bottom: 0;
+	background: $dark-blue;
+}
+
+.topmenu {
+	width: 80%;
+	height: 5em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: $charcoal;
+}
+
+.main {
+	width: 80%;
+	position: absolute;
+	top: 5em;
+	right: 0;
+	bottom: 0;
+	background: white;
+}
