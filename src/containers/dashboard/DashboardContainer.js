@@ -8,7 +8,7 @@ class DashboardContainer extends Component {
 
 	componentWillMount(){
 		const { dispatch } = this.props;
-		dispatch(callApi('random-quote'));
+		dispatch(callApi('protected/doctor/doctor1@gmail.com', true));
 	}
 
 
